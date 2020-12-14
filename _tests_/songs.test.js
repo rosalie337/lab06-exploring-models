@@ -1,7 +1,7 @@
 const fs = require('fs');
 const request = require('supertest');
 const app = require('../lib/app');
-const Song = require('../lib/models/songs');
+const Song = require('../lib/models/Songs');
 const pool = require('../lib/utils/pool');
 
 describe('app routes for song model', () => {
