@@ -48,7 +48,7 @@ describe('app routes for song model', () => {
   it('returns a song using via GET', async() => {
   
     const data = await request(app)
-      .get('/song/1');
+      .get('/songs/1');
       
     expect(data.body).toEqual({
       id: '1',
@@ -98,4 +98,5 @@ describe('app routes for song model', () => {
       album: 'Black on Both Sides'
     });
   });
+
 });
